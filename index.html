@@ -8,32 +8,33 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1 class="t1">Jacob Macdonald</h1>
-	<h2 class="t2">Web Developer</h2>
-	<h2 class="t3">I make websites.</h2>
-	<h3 class="t4">Let me know if you would like one</h3>
-	<br><br><br><br>
-	<h3 class="email"><span>jacob<b>&nbsp;</b>lmacd<b>&nbsp;</b>onald.c<b>&nbsp;</b>om<br></span><b>&nbsp;</b>@<span>gm<b>&nbsp;</b>ail.c<b>&nbsp;</b>om</span></h3>
+	<div class="container">
+		<h1 class="t1">Jacob Macdonald</h1>
+		<h2 class="t2">Web Developer</h2>
+		<h2 class="t3">I make websites.</h2>
+		<h3 class="t4">Let me know if you would like one</h3>
+		<br><br><br><br>
+		<h3 class="email"><span>jacob<b>&nbsp;</b>lmacd<b>&nbsp;</b>onald.c<b>&nbsp;</b>om<br></span><b>&nbsp;</b>@<span>gm<b>&nbsp;</b>ail.c<b>&nbsp;</b>om</span></h3>
 
-	<div class="sites">
-		<a class="site" href="https://bensbest.com" target="_blank">Ben's Best Blnz</a>
-		<br>
-		<a class="site" href="https://daywatch.la" target="_blank">Daywatch</a>
-		<br>
-		<a class="site" href="https://paradise.work" target="_blank">Paradise</a>
-		<br>
-		<a class="site" href="https://brut.us" target="_blank">BRUTUS</a>
-		<br>
-		<a class="site" href="https://awake.jaymestone.com" target="_blank">Jayme Stone | AWake</a>
-		<br>
-		<a class="site" href="https://gracehartnett.com" target="_blank">Grace Hartnett</a>
-		<br>
+		<div class="sites">
+			<a class="site" href="https://bensbest.com" target="_blank">Ben's Best Blnz</a>
+			<br>
+			<a class="site" href="https://daywatch.la" target="_blank">Daywatch</a>
+			<br>
+			<a class="site" href="https://paradise.work" target="_blank">Paradise</a>
+			<br>
+			<a class="site" href="https://brut.us" target="_blank">BRUTUS</a>
+			<br>
+			<a class="site" href="https://awake.jaymestone.com" target="_blank">Jayme Stone | AWake</a>
+			<br>
+			<a class="site" href="https://gracehartnett.com" target="_blank">Grace Hartnett</a>
+			<br>
+		</div>
+
+		<div class="bg1"></div>
+		<div class="bg2"></div>
+		<div class="fg"></div>
 	</div>
-
-	<div class="bg1"></div>
-	<div class="bg2"></div>
-	<div class="fg"></div>
-
 
 	<style>
 		* {
@@ -48,8 +49,15 @@
 		}
 
 		body {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.container {
 			width: 100vw;
 			height: 100vh;
+			position: relative;
+			overflow: hidden;
 		}
 
 		.t1 {
@@ -177,18 +185,18 @@
 			100% { color: #FFFD98; background-color: #0FA3B1; }
 		}
 
-		/*@media (max-width: 800px) {
+		@media (max-width: 800px) {
 
 			html {
 				font-size: 1vh;
 			}
 
-			body {
+			.container {
 				width: 100vh;
 				transform: rotate(-90deg) translateY(-100vh);
 				transform-origin: 100% 0;
 			}
-		}*/
+		}
 	</style>
 
 	<script>
