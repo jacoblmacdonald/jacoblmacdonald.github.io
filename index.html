@@ -1,0 +1,211 @@
+<html>
+<head>
+	<title>Jacob Macdonald | Web Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1 class="t1">Jacob Macdonald</h1>
+	<h2 class="t2">Web Developer</h2>
+	<h2 class="t3">I make websites.</h2>
+	<h3 class="t4">Let me know if you would like one</h3>
+	<br><br><br><br>
+	<h3 class="email"><span>jacob<b>&nbsp;</b>lmacd<b>&nbsp;</b>onald.c<b>&nbsp;</b>om<br></span><b>&nbsp;</b>@<span>gm<b>&nbsp;</b>ail.c<b>&nbsp;</b>om</span></h3>
+
+	<div class="sites">
+		<a class="site" href="https://bensbest.com" target="_blank">Ben's Best Blnz</a>
+		<br>
+		<a class="site" href="https://daywatch.la" target="_blank">Daywatch</a>
+		<br>
+		<a class="site" href="https://paradise.work" target="_blank">Paradise</a>
+		<br>
+		<a class="site" href="https://brut.us" target="_blank">BRUTUS</a>
+		<br>
+		<a class="site" href="https://awake.jaymestone.com" target="_blank">Jayme Stone | AWake</a>
+		<br>
+		<a class="site" href="https://gracehartnett.com" target="_blank">Grace Hartnett</a>
+		<br>
+	</div>
+
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="fg"></div>
+
+
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
+
+		html {
+			font-size: 1vw;
+			font-family: 'Bebas Neue';
+			overflow: hidden;
+		}
+
+		body {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		.t1 {
+			font-size: 15rem;
+		    line-height: 12.5rem;
+		}
+
+		.t2 {
+			position: relative;
+			top: -2.7rem;
+			font-size: 7.5rem;
+			letter-spacing: 0.06rem;
+			text-align: right;
+		}
+
+		.t3 {
+			position: relative;
+			top: -4rem;
+			font-size: 7.5rem;
+			letter-spacing: 0.11rem;
+		}
+
+		.t4 {
+			position: relative;
+			top: -4rem;
+			font-size: 3.75rem;
+			line-height: 0;
+		}
+
+		.email {
+			position: relative;
+			top: -7.5rem;
+			z-index: 1000;
+			font-size: 3.75rem;
+			padding-right: 7rem;
+			text-align: right;
+			cursor: pointer;
+		}
+
+		.email span {
+			text-decoration: underline;
+		}
+
+		.email b {
+			font-size: 0;
+		}
+
+		.sites {
+			position: relative;
+			top: -12rem;
+			width: 60rem;
+			columns: 2;
+		}
+
+		.site {
+			display: inline-block;
+			font-size: 3.75rem;
+			padding-left: 2rem;
+			margin-bottom: 1rem;
+			animation: cycleColors3 22s linear infinite;
+		}
+
+		.bg1, .bg2 {
+			position: absolute;			
+			z-index: -1;
+			width: 100rem;
+			height: 100vh;
+		}
+
+		.bg1 {
+			top: 23.3rem;
+			animation: cycleColors 22s linear infinite;
+		}
+
+		.bg2 {
+			top: 5.3rem;
+			left: 67.7rem;
+			animation: cycleColors2 22s linear infinite;
+		}
+
+		.fg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: 100;
+			pointer-events: none;
+		}
+
+		html.copying .fg {
+			background-color: black;
+			pointer-events: all;
+		}
+
+		html.copying .email {
+			color: white;
+			text-decoration: none;
+		}
+
+		@keyframes cycleColors {
+			0% { background-color: #FFFD98; }
+			20% { background-color: #59C9A5; }
+			40% { background-color: #D81E5B; }
+			60% { background-color: #23395B; }
+			80% { background-color: #B9E3C6; }
+			100% { background-color: #FFFD98; }
+		}
+
+		@keyframes cycleColors2 {
+			0% { background-color: #0FA3B1; }
+			20% { background-color: #F7A072; }
+			40% { background-color: #EDDEA4; }
+			60% { background-color: #D9E5D6; }
+			80% { background-color: #FF9B42; }
+			100% { background-color: #0FA3B1; }
+		}
+
+		@keyframes cycleColors3 {
+			0% { color: #FFFD98; background-color: #0FA3B1; }
+			20% { color: #59C9A5; background-color: #F7A072; }
+			40% { color: #D81E5B; background-color: #EDDEA4; }
+			60% { color: #23395B; background-color: #D9E5D6; }
+			80% { color: #B9E3C6; background-color: #FF9B42; }
+			100% { color: #FFFD98; background-color: #0FA3B1; }
+		}
+
+		@media (max-width: 800px) {
+
+			html {
+				font-size: 1vh;
+			}
+
+			body {
+				width: 100vh;
+				transform: rotate(-90deg) translateY(-100vh);
+				transform-origin: 100% 0;
+			}
+		}
+	</style>
+
+	<script>
+		$(document).on('click', '.email', (e) => {
+			if(!$('html').hasClass('copying')) {
+				let $el = $(e.currentTarget)
+				$('html').addClass('copying')
+				navigator.clipboard.writeText('jacob' + 'l' + 'macdonald' + '.' + 'com' + '@' + 'gm' + 'ail' + '.' + 'com').then(() => {
+					let html = $el.html()
+					$el.text('Email copied to clipboard')
+					setTimeout(() => {
+						$el.html(html)
+						$('html').removeClass('copying')
+					}, 1000)
+				})
+			}
+		})
+	</script>
+</body>
+</html>
