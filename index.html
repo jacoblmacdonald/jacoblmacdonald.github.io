@@ -200,6 +200,8 @@
 	</style>
 
 	<script>
+		ScreenOrientation.lock('portrait')
+
 		$(document).on('click', '.email', (e) => {
 			if(!$('html').hasClass('copying')) {
 				let $el = $(e.currentTarget)
