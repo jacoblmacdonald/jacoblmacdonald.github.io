@@ -185,7 +185,7 @@
 			100% { color: #FFFD98; background-color: #0FA3B1; }
 		}
 
-		@media (max-width: 800px) {
+		@media (max-width: 800px) and (orientation: portrait) {
 
 			html {
 				font-size: 1vh;
@@ -200,8 +200,6 @@
 	</style>
 
 	<script>
-		ScreenOrientation.lock('portrait')
-
 		$(document).on('click', '.email', (e) => {
 			if(!$('html').hasClass('copying')) {
 				let $el = $(e.currentTarget)
