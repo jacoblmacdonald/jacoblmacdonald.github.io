@@ -14,7 +14,9 @@
 		<h2 class="t3">I make websites.</h2>
 		<h3 class="t4">Let me know if you would like one</h3>
 		<br><br><br><br>
-		<h3 class="email"><span>jacob<b>&nbsp;</b>lmacd<b>&nbsp;</b>onald.c<b>&nbsp;</b>om<br></span><b>&nbsp;</b>@<span>gm<b>&nbsp;</b>ail.c<b>&nbsp;</b>om</span></h3>
+		<div class="email-container">
+			<h3 class="email"><span>jacob<b>&nbsp;</b>lmacd<b>&nbsp;</b>onald.c<b>&nbsp;</b>om<br></span><b>&nbsp;</b>@<span>gm<b>&nbsp;</b>ail.c<b>&nbsp;</b>om</span></h3>
+		</div>
 
 		<div class="sites">
 			<a class="site" href="https://bensbest.com" target="_blank">Ben's Best Blnz</a>
@@ -87,17 +89,22 @@
 			line-height: 0;
 		}
 
+		.email-container {
+			text-align: right;
+		}
+
 		.email {
+			display: inline-block;
 			position: relative;
 			top: -7.5rem;
 			z-index: 1000;
 			font-size: 3.75rem;
+			line-height: 2.45rem;
 			padding-right: 7rem;
-			text-align: right;
 			cursor: pointer;
 		}
 
-		.email span {
+		.email:hover span {
 			text-decoration: underline;
 		}
 
@@ -118,6 +125,10 @@
 			padding-left: 2rem;
 			margin-bottom: 1rem;
 			animation: cycleColors3 22s linear infinite;
+		}
+
+		.site:not(:hover) {
+			text-decoration: none;
 		}
 
 		.bg1, .bg2 {
