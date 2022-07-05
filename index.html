@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="t1">Jacob Macdonald</h1>
-		<h2 class="t2">Web Developer</h2>
+		<h1 class="t1"><span style="letter-spacing: -0.4rem;">J</span><span style="letter-spacing: -0.4rem;">a</span><span style="letter-spacing: -0.2rem;">c</span><span style="letter-spacing: -0.45rem;">o</span>b <span style="letter-spacing: -0.1rem;">M</span><span style="letter-spacing: -0.4rem;">a</span><span style="letter-spacing: -0.35rem;">c</span><span style="letter-spacing: -0.35rem;">d</span><span style="letter-spacing: -0.5rem;">o</span><span style="letter-spacing: -0.2rem;">n</span><span style="letter-spacing: -0.2rem;">a</span><span style="letter-spacing: -0.15rem;">l</span>d</h1>
+		<h2 class="t2">Web<br>D<span style="letter-spacing: 0.1rem;">e</span>v<span style="letter-spacing: -0.05rem;">e</span>l<span style="letter-spacing: -0.1rem;">o</span>per</h2>
 		<h2 class="t3">I make websites.</h2>
 		<h3 class="t4">Let me know if you would like one</h3>
 		<br><br><br><br>
@@ -33,8 +33,10 @@
 			<br>
 		</div>
 
-		<div class="bg1"></div>
-		<div class="bg2"></div>
+		<div class="bg bg1"></div>
+		<div class="bg bg2"></div>
+		<div class="bg bg3"></div>
+		<div class="bg bg4"></div>
 		<div class="fg"></div>
 	</div>
 
@@ -69,9 +71,9 @@
 
 		.t2 {
 			position: relative;
-			top: -2.7rem;
+			top: -6.8rem;
 			font-size: 7.5rem;
-			letter-spacing: 0.06rem;
+			line-height: 5.7rem;
 			text-align: right;
 		}
 
@@ -79,12 +81,12 @@
 			position: relative;
 			top: -4rem;
 			font-size: 7.5rem;
-			letter-spacing: 0.11rem;
 		}
 
 		.t4 {
 			position: relative;
-			top: -4rem;
+			top: -4.45rem;
+			left: 0.1rem;
 			font-size: 3.75rem;
 			line-height: 0;
 		}
@@ -100,7 +102,7 @@
 			z-index: 1000;
 			font-size: 3.75rem;
 			line-height: 2.45rem;
-			padding-right: 7rem;
+			padding-right: 9.3rem;
 			cursor: pointer;
 		}
 
@@ -131,7 +133,7 @@
 			text-decoration: none;
 		}
 
-		.bg1, .bg2 {
+		.bg {
 			position: absolute;			
 			z-index: -1;
 			width: 100rem;
@@ -139,13 +141,40 @@
 		}
 
 		.bg1 {
-			top: 23.3rem;
+			top: 23.4rem;
 			animation: cycleColors 22s linear infinite;
 		}
 
 		.bg2 {
-			top: 5.3rem;
-			left: 67.7rem;
+			top: 5.4rem;
+			left: 68rem;
+			animation: cycleColors2 22s linear infinite;
+		}
+
+		/*.bg3 {
+			top: 1rem;
+			left: 16rem;
+			width: 3rem;
+			height: 9rem;
+			animation: cycleColors2 22s linear infinite;
+		}
+
+		.bg4 {
+			top: 1rem;
+			left: 55rem;
+			width: 3rem;
+			height: 9rem;
+			animation: cycleColors2 22s linear infinite;
+		}*/
+
+		.bg2:before {
+			content: '';
+			display: block;
+			position: relative;
+			top: -2rem;
+			left: -1rem;
+			width: 2rem;
+			height: 4rem;
 			animation: cycleColors2 22s linear infinite;
 		}
 
